@@ -1,0 +1,160 @@
+/* css/styles.css */
+:root{
+  --bg1:#0b1020;
+  --bg2:#3b1a7a;
+  --bg3:#0b7a6b;
+  --glass: rgba(255,255,255,.08);
+  --glass2: rgba(255,255,255,.12);
+  --stroke: rgba(255,255,255,.14);
+  --glow: 0 20px 60px rgba(0,0,0,.45);
+}
+
+*{ box-sizing:border-box; }
+
+.app-bg{
+  min-height:100vh;
+  background:
+    radial-gradient(1200px 600px at 15% 10%, rgba(255, 78, 205, .22), transparent 60%),
+    radial-gradient(900px 600px at 90% 20%, rgba(0, 255, 214, .18), transparent 55%),
+    radial-gradient(900px 600px at 40% 90%, rgba(76, 140, 255, .20), transparent 55%),
+    linear-gradient(135deg, var(--bg1), var(--bg2) 55%, var(--bg3));
+}
+
+.glass-nav{
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+}
+
+.brand-dot{
+  width:12px;height:12px;border-radius:50%;
+  background: linear-gradient(135deg, #ff4ecd, #4c8cff, #00ffd6);
+  box-shadow: 0 0 0 6px rgba(255,255,255,.06);
+}
+
+.badge-soft{
+  background: rgba(255,255,255,.10);
+  border:1px solid var(--stroke);
+  color: rgba(255,255,255,.85);
+}
+.badge-soft-2{
+  background: rgba(0,255,214,.10);
+  border:1px solid rgba(0,255,214,.25);
+  color: rgba(255,255,255,.85);
+}
+
+.hero-title{
+  background: linear-gradient(90deg, #ffffff, #c9d6ff, #00ffd6);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color: transparent;
+}
+
+.stat-chip{
+  padding: .75rem 1rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(10px);
+  min-width: 140px;
+}
+.stat-label{
+  font-size:.75rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color: rgba(255,255,255,.55);
+}
+.stat-value{
+  font-weight:700;
+  font-size:1.05rem;
+}
+
+.glass-card{
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--glow);
+}
+
+.bullet{
+  width:10px;height:10px;border-radius:50%;
+  background: linear-gradient(135deg, #ff4ecd, #00ffd6);
+  margin-top:.35rem;
+  flex: 0 0 auto;
+}
+
+.code-pill{
+  padding:.15rem .45rem;
+  border-radius:.5rem;
+  background: rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.9);
+}
+
+.canvas-wrap{
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: rgba(255,255,255,.06);
+  border:1px solid var(--stroke);
+  box-shadow: var(--glow);
+}
+
+.canvas-topbar{
+  padding:.75rem 1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  background: rgba(0,0,0,.28);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.topbar-title{
+  flex: 1;
+  text-align:center;
+}
+
+.dot{ width:10px;height:10px;border-radius:50%; opacity:.95; }
+.dot-r{ background:#ff5f56; }
+.dot-y{ background:#ffbd2e; }
+.dot-g{ background:#27c93f; }
+
+.badge-mini{
+  background: rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.75);
+  font-weight: 600;
+}
+
+.canvas-inner{
+  padding: 1rem;
+  background: radial-gradient(700px 350px at 20% 20%, rgba(0,255,214,.10), transparent 60%),
+              radial-gradient(700px 350px at 80% 30%, rgba(255,78,205,.10), transparent 60%),
+              rgba(0,0,0,.12);
+}
+
+#canvas{
+  width: 500px;   /* debe coincidir con el JS */
+  height: 300px;  /* debe coincidir con el JS */
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+
+/* Footer */
+.glass-footer{
+  background: rgba(0,0,0,.28);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.footer-name{
+  padding:.35rem .75rem;
+  border-radius: .75rem;
+  background: rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  text-align: center;
+}
