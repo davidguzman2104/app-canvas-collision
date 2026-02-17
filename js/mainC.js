@@ -10,10 +10,13 @@ const window_height = window.innerHeight / 2;
 // Toma la mitad del ancho de la ventana del navegador
 const window_width = window.innerWidth / 2;
 
-
 // Asigna esas dimensiones al canvas
 canvas.height = window_height;
 canvas.width = window_width;
+
+// ✅ AGREGADO: asegura que el tamaño visible (CSS) coincida con el tamaño real del canvas
+canvas.style.width = canvas.width + "px";
+canvas.style.height = canvas.height + "px";
 
 // Define el color de fondo del canvas
 canvas.style.background = "rgb(88, 240, 108)";
